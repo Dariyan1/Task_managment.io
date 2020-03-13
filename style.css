@@ -276,6 +276,10 @@ body {
 }
 #max-top {
     display: flex;
+    position:fixed;
+    top:0px;
+    width:100%;
+    z-index: 59;
 }
 
 #about a:hover {
@@ -291,7 +295,6 @@ body {
 }
 .CN {
     margin:0 20px;
-    opacity: 0.3;
 }
 
 #main2 {
@@ -314,6 +317,11 @@ form {
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+#submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 #firstName {
     border: 1px solid orange;
@@ -348,7 +356,7 @@ form {
 
 #threeF {
     width:310px;
-    margin-left: 236px;
+    margin-left: 50px;
     height: 256px;
     display: flex;
     flex-direction: column;
@@ -411,8 +419,40 @@ form {
     margin-top:-5px;
     text-align: center;
 }
+.tB {
+    border-bottom:10px solid blue;
+    width:70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:40px;
+    height:160px;
+}
+.picTeam {
+    display: flex;
+    justify-content: space-between;
+    padding-top:50px;
+    width:50%;
+    height:50%;
+}
+.Bob {
+    height:300px;
+}
+
+form {
+    border: 1px solid #3A4151;
+    padding: 50px;
+}
+.team {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top:100px;
+}
 .hole2 {
     font-size:25px;
+    width:100%;
 }
 .objL {
     margin-top: 53px;
@@ -486,6 +526,25 @@ form {
 }
 * {
     transition: all .5s;
+    font-family: 'Muli', sans-serif;
+
+}
+#ak2 {
+    position: absolute;
+    top:480px;
+    right:-30px;
+}
+#ak3 {
+    position: absolute;
+    top:700px;
+    right:280px;
+    z-index: -3;        
+}
+#ak4 {
+    position: absolute;
+    top:700px;
+    right:-130px;
+    z-index: -2;
 }
 #seamless {
     width:552px;
@@ -561,6 +620,15 @@ form {
     .first {
         display:none;
     }
+    #ak2 {
+        display: none;
+    }
+    #ak3 {
+        display: none;
+    }
+    #ak4 {
+        display: none;
+    }
     #groupPic {
         display:none;
     }
@@ -605,6 +673,7 @@ form {
 @media only screen and (max-width:1197px) {
     #three {
         flex-direction: column;
+        margin-left:150px;
     }
 }
 @media only screen and (max-width:1065px) {
@@ -633,7 +702,7 @@ form {
         margin-left:3px;
     }
     #three {
-        margin-left:-140px;
+        margin-left:40px;
     }
 }
 @media only screen and (max-width:720px) {
@@ -660,5 +729,10 @@ form {
         width:100%;
         margin-right:0px; 
         margin-left: 30px;  
+    }
+}
+@media only screen and (max-width:1350px) {
+    .Bob {
+        height:100px;
     }
 }
